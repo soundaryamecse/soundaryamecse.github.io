@@ -47,6 +47,7 @@
     .circleforcoding {
         margin-left: 5%;
     }
+   
     .neu:hover{
         border-radius: 18px;
         background: #f9fafa;
@@ -56,13 +57,36 @@
     img :hover{
         padding: 50px;
     }
-
+    button{
+        background: rgb(77, 187, 241);
+        color:white;
+        border:none;
+        padding:5px;
+        font-weight: bolder;
+        border-radius: 10px;
+    }
     .project{
         border-radius: 40px 0px;
         background: #f9fafa;
         box-shadow:  5px 5px 10px #eaebeb, 
                     -5px -5px 10px #ffffff;
     }  
+    .projImg{
+        padding: 10px;
+        height:220px;
+        width:355px;
+        object-fit: cover;
+        position: relative;
+        left: -25px;top:-10px;
+        border-radius: 40px 0px 0px 0px;
+    }
+    .icon{
+        object-fit: contain;
+    }
+    .codePosition{
+        position: relative;
+        bottom:-30px;
+    }
     @media only screen and (max-width: 992px)
     {
         .slantBox{
@@ -124,7 +148,7 @@
 <body>
     <div class="slantBox"></div>
     <div class="marginBox">       
-        <img style="height: 160px; width:160px;border:12px solid #40C4FF;" class="rounded-circle img-circle"
+        <img style="height: 160px; width:160px;border:12px solid #40C4FF; object-fit: cover;object-position: top;" class="rounded-circle img-circle"
             src="img/soundaryaProfile.png" data-aos="flip-left" data-aos-duration="2000"  >
             <div style="background:rgb(77, 187, 241)" class="rounded-circle dotcircle"></div>
             <div class="text-center  contentDetails"  style="background-color: rgba(233,236,239,0);">
@@ -140,13 +164,13 @@
                 </ul>
                 <ul>
                     <li class="list-inline-item "><a href="https://www.linkedin.com/in/soundarya-m-29b346113/" target="blank"><img  src="img/linkedin.jpg" style=" border-radius:10px;height:50px;width:50px;"></a>
-                    <li class="list-inline-item ml-4"><a href="https://github.com/soundaryamecse" target="blank"><img src="img/gitlogo.png" style=" border-radius:10px;height:50px;width:50px;object-fit:cover;"></a>
+                    <li class="list-inline-item ml-4"><a href="https://github.com/soundaryamecse" target="blank"><img src="img/gitlogo.JPG" style=" border-radius:10px;height:50px;width:50px;object-fit:cover;"></a>
                     <li class="list-inline-item ml-4"><a href="https://twitter.com/SoundaryaM20" target="blank"><img src="img/twitter.png" style=" border-radius:10px;height:50px;width:50px;"></a>
                     
                 </ul>
                 <p class="text-center text-muted" style="word-wrap: break-word;">
                     I'm a Full Stack Developer with the curios mind to learn new things.<br/> Ready to join in a team to expose my skills
-                <a href="img/Soundarya's Resume.pdf" download target="blank"> My Profile</a>&nbsp;</p>
+                <a href="img/Soundarya's Resume.pdf" download target="blank"> <button>Resume</button></a>&nbsp;</p>
                 </p>
 
             </div> 
@@ -162,23 +186,23 @@
                 <div class="col-6 col-md-4 col-lg-3 mb-2 neu" data-aos="zoom-in" data-aos-duration="1000">
                     <div><b>HTML</b></div>
                     <img  src="img/html.png"
-                        style="width: 111px;height:120px;padding: 12px;"></div>
+                        style="width: 111px;height:120px;padding: 12px; object-fit: contain;"></div>
                 <div class="col-6 col-md-4 col-lg-3 mb-2 neu" data-aos="zoom-in" data-aos-duration="1000">
                     <div><b>CSS</b></div>
                     <img  src="img/css.png"
-                        style="width: 111px;height:120px;padding: 12px;"></div>
+                        style="width: 111px;height:120px;padding: 12px; object-fit: contain;"></div>
                 <div class="col-6 col-md-4 col-lg-3 mb-2 neu" data-aos="zoom-in" data-aos-duration="1000">
                     <div><b>Bootstrap</b></div>
                     <img src="img/bootstrap.png"
-                        style="width: 111px;height:120px;padding: 12px;"></div>
+                        style="width: 111px;height:120px;padding: 12px;object-fit: contain;"></div>
                 <div class="col-6 col-md-4 col-lg-3 mb-2 neu" data-aos="zoom-in" data-aos-duration="1000">
                     <div><b>JS</b></div>
                     <img src="img/js.png"
-                    style="width: 111px;height:120px;padding: 12px;"></div>
+                    style="width: 111px;height:120px;padding: 12px;object-fit: contain;"></div>
                 <div class="col-6 col-md-4 col-lg-3 mb-2 neu" data-aos="zoom-in" data-aos-duration="1000">
                     <div><b>React</b></div>
-                    <img src="img/React.png"
-                    style="width: 111px;height:120px;padding: 12px;">
+                    <img src="img/react.png"
+                    style="width: 111px;height:120px;padding: 12px;object-fit: contain;">
                 </div>
                 <!-- <div class="col-6 col-md-4 col-lg-3 mb-2 neu" data-aos="zoom-in" data-aos-duration="1000">
                     <div><b>Material UI</b></div>
@@ -187,19 +211,19 @@
                 <div class="col-6 col-md-4 col-lg-3 mb-2 neu" data-aos="zoom-in" data-aos-duration="1000">
                     <div><b>Redux</b></div>
                     <img src="img/redux.png"
-                        style="width: 111px;height:120px;padding: 12px;"></div>  
+                        style="width: 111px;height:120px;padding: 12px;object-fit: contain;"></div>  
                 <!-- <div class="col-6 col-md-4 col-lg-3 mb-2 neu" data-aos="zoom-in" data-aos-duration="1000">
                     <div><b>GIT</b></div>
                     <img  src="img/git.png"
                             style="width: 111px;height:120px;padding: 12px;"></div> -->
                 <div class="col-6 col-md-4 col-lg-3 mb-2 neu" data-aos="zoom-in" data-aos-duration="1000">
                     <div><b>Node JS</b></div>
-                    <img src="img/nodejs.png"
-                    style="width: 111px;height:120px;padding: 12px;"></div>
+                    <img src="img/nodejs.svg"
+                    style="width: 111px;height:120px;padding: 12px;object-fit: contain;"></div>
                 <div class="col-6 col-md-4 col-lg-3 mb-2 neu" data-aos="zoom-in" data-aos-duration="1000">
                     <div><b>MongoDB</b></div>
                     <img src="img/mongodb.png"
-                    style="width: 111px;height:120px;padding: 12px;">
+                    style="width: 111px;height:120px;padding: 12px;object-fit: contain;">
                 </div>
                 
             </div>
@@ -248,115 +272,127 @@
    
    
     <div class="container-fluid  pt-5 pb-5 fullview" style="background:#F5F5F5;">
-        <div class="row justify-content-center">            
-            <div class="card col-8 col-sm-8 col-md-5 col-lg-3 p-2 m-3 project" style="width: 25rem;" data-aos="zoom-in" data-aos-duration="1000">
-                <img src="project/pro5.jpg" class="card-img-top" alt="Typing Master"  height="180px" style="padding: 10px;" >
+        <div class="row justify-content-center">  
+            
+            <div class="card col-8 col-sm-8 col-md-5 col-lg-3 m-2 project" style="width: 25rem;" data-aos="zoom-in" data-aos-duration="1000">
+                <img src="project/pro8.JPG" class="card-img-top projImg" alt="Flawless"   >
                 <div class="card-body text-center">
-                    <h5 class="card-title"><strong>Typing Master</strong></h5>
-                    <p class="card-text"> typing game with accuracy word per minute  are some of the features in this project HTML , CSS, Bootstrap ,ES6, JavaScript</p>
-                    <div>
-                        <img src="img/html.png" class="mr-3" alt="HTML5" height="30">
-                        <img src="img/css.png" class="mr-3" alt="CSS3" height="30">
-                        <img src="img/js.png" class="mr-3" alt="JS" height="30">
-                        <img src="img/bootstrap.png" alt="Bootstrap" height="30">
-                    </div>
-                    <div class="card-body " style="position: relative;bottom:-20px;">
-                        <a href="https://github.com/AlokKothiyal1/Masai_typing/blob/master/index.html" target="_blank" class="btn text-white" style="background-color: #425de6;">Code</a>
-                        <a href="" target="_blank" class="btn text-white" style="background-color: #425de6;">Demo</a>
+                    <h5 class="card-title"><strong>Flawless(cloned from Seamless.com)</strong></h5>
+                    <p class="card-text">Amazing Project implemented with MongoDB, express ,node js, Redux, React, materialui, React hooks</p>
+                    <div class="codePosition">
+                        <div>
+                            <img src="img/React.png" class="mr-3 icon" alt="HTML5" height="30px" width="30px">
+                            <img src="img/redux.png" class="mr-3 icon" alt="CSS3" height="30px" width="30px">
+                            <img src="img/mongodb.png" class="mr-3 icon" alt="JS" height="30px" width="30px">
+                            <img src="img/nodejs.svg" alt="Bootstrap " class="mr-3 icon" height="30px" width="30px">
+                            <img src="img/materialui.png" alt="materialui" class="mr-3 icon" height="30px" width="30px">
+                        </div>
+                        <div class="card-body  " >
+                            <a href="https://github.com/riteshranjan1997/Ivory-Apache-Projects" target="_blank" class="btn text-white" style="background-color: #425de6;">Code</a>
+                            <a href="http://ec2-13-127-156-161.ap-south-1.compute.amazonaws.com/" target="_blank" class="btn text-white" style="background-color: #425de6;">Demo</a>
+                        </div>
                     </div>
                 </div>
             </div>        
-                 
-            <div class="card col-8 col-sm-8 col-md-5 col-lg-3 p-2 m-3 project" style="width: 25rem;" data-aos="zoom-in" data-aos-duration="1000">
-                <img src="project/pro4.JPG" class="card-img-top" alt="Food Delivary System"  height="180px" style="padding: 10px;object-fit: cover;">
+            
+            <div class="card col-8 col-sm-8 col-md-5 col-lg-3 m-2 project" style="width: 25rem; " data-aos="zoom-in" data-aos-duration="1000">
+                <img src="project/pro7.JPG" class="card-img-top projImg" alt="expense manager" >
                 <div class="card-body text-center">
-                    <h5 class="card-title"><strong>Food Delivary System</strong></h5>
-                    <p class="card-text">Basic concepts of food Delivary system using HTML, CSS, JavaScript,LocalStorage,URL Search params</p>
-                    <div >
-                        <img src="img/html.png" class="mr-3" alt="HTML5" height="30">
-                        <img src="img/css.png" class="mr-3" alt="HTML5" height="30">
-                        <img src="img//js.png" class="mr-3" alt="JS" height="30">
-                    </div>
-                    <div class="card-body" style="position: relative;bottom:-20px;">
-                        <a href="https://github.com/soundaryamecse/masai_sprint2" target="_blank" class="btn text-white" style="background-color: #425de6;">Code</a>
-                        <a href="https://soundaryamecse.github.io/masai_sprint2/" target="_blank" class="btn text-white" style="background-color: #425de6;">Demo</a>
-                    </div>
+                    <h5 class="card-title"><strong>Expense Manager(Clone)</strong></h5>
+                    <p class="card-text">React App with basic functionalities of expense manager with API using axios and redux</p>
+                    <div class="codePosition">
+                        <div >
+                            <img src="img/React.png" class="mr-3 icon" alt="react" height="30px" width="30px">
+                            <img src="img/redux.png" class="mr-3 icon" alt="redux" height="30px" width="30px">
+                            <img src="img//css.png" class="mr-3 icon" alt="css" height="30px" width="30px">
+                        </div>
+                        <div class="card-body" >
+                            <a href="https://github.com/Madhurendra1311/expense_manager_project" target="_blank" class="btn text-white" style="background-color: #425de6;">Code</a>
+                            <a href="https://expense-manager-ten.vercel.app" target="_blank" class="btn text-white" style="background-color: #425de6;">Demo</a>
+                        </div>
+                </div>
                 </div>
             </div>
-            <div class="card col-8 col-sm-8 col-md-5 col-lg-3 p-2 m-3 project" style="width: 25rem;" data-aos="zoom-in" data-aos-duration="1000">
-                <img src="project/pro3.JPG" class="card-img-top" alt="Recipe Book"  height="180px" style="padding: 10px;object-fit: cover;">
+            
+            <div class="card col-8 col-sm-8 col-md-5 col-lg-3 m-2 project" style="width: 25rem;padding:-10px" data-aos="zoom-in" data-aos-duration="1000">
+                <img src="project/pro6.JPG" class="card-img-top projImg" alt="Recipe Book">
+                <div class="card-body text-center">
+                    <h5 class="card-title"><strong>Leela Palace(clone)</strong></h5>
+                    <p class="card-text">Project with React<br>React router DOM<br> Context API and styled Components</p>
+                    <div class="codePosition">
+                        <div>
+                            <img src="img/React.png" class="mr-3 icon" alt="HTML5" height="30px" width="30px">
+                            <img src="img/css.png" class="mr-3 icon" alt="CSS3" height="30px" width="30px">
+                            
+                        </div>
+                        <div class="card-body" >
+                            <a href="https://github.com/soundaryamecse/leelapalace.github.io" target="_blank" class="btn text-white" style="background-color: #425de6;">Code</a>
+                            <a href="https://leelapalace-github-io.vercel.app/Bangalore" target="_blank" class="btn text-white" style="background-color: #425de6;">Demo</a>
+                        </div>
+                </div>                    
+                </div>
+            </div>       
+                   
+            <div class="card col-8 col-sm-8 col-md-5 col-lg-3 m-2 project" style="width: 25rem;" data-aos="zoom-in" data-aos-duration="1000">
+                <img src="project/pro5.jpg" class="card-img-top projImg" alt="Typing Master"   >
+                <div class="card-body text-center">
+                    <h5 class="card-title"><strong>Typing Master</strong></h5>
+                    <p class="card-text"> typing game with accuracy word per minute  are some of the features in this project HTML , CSS, Bootstrap ,ES6, JavaScript</p>
+                    <div class="codePosition">
+                        <div>
+                            <img src="img/html.png" class="mr-3 icon" alt="HTML5" height="30px" width="30px">
+                            <img src="img/css.png" class="mr-3 icon" alt="CSS3" height="30px" width="30px">
+                            <img src="img/js.png" class="mr-3 icon" alt="JS" height="30px" width="30px">
+                            <img src="img/bootstrap.png" class="mr-3 icon" alt="Bootstrap" height="30px" width="30px">
+                        </div>
+                        <div class="card-body" >
+                            <a href="https://github.com/AlokKothiyal1/Masai_typing/blob/master/index.html" target="_blank" class="btn text-white" style="background-color: #425de6;">Code</a>
+                            <a href="" target="_blank" class="btn text-white" style="background-color: #425de6;">Demo</a>
+                        </div>
+                </div>
+                </div>
+            </div>        
+                 
+            <div class="card col-8 col-sm-8 col-md-5 col-lg-3 m-2 project" style="width: 25rem;" data-aos="zoom-in" data-aos-duration="1000">
+                <img src="project/pro2.JPG" class="card-img-top projImg" alt="Food Delivery System"   >
+                <div class="card-body text-center">
+                    <h5 class="card-title"><strong>Restaurant Bill Generator</strong></h5>
+                    <p class="card-text">Basic concepts of Bill Generator system using HTML, CSS, JavaScript</p>
+                    <div class="codePosition">
+                        <div >
+                            <img src="img/html.png" class="mr-3 icon" alt="HTML5" height="30px" width="30px">
+                            <img src="img/css.png" class="mr-3 icon" alt="HTML5" height="30px" width="30px">
+                            <img src="img//js.png" class="mr-3 icon" alt="JS" height="30px" width="30px">
+                        </div>
+                        <div class="card-body" >
+                            <a href="https://github.com/soundaryamecse/masai_sprint2" target="_blank" class="btn text-white" style="background-color: #425de6;">Code</a>
+                            <a href="https://soundaryamecse.github.io/masai_sprint2/" target="_blank" class="btn text-white" style="background-color: #425de6;">Demo</a>
+                        </div>
+                </div>
+                </div>
+            </div>
+            <div class="card col-8 col-sm-8 col-md-5 col-lg-3 m-2 project" style="width: 25rem;" data-aos="zoom-in" data-aos-duration="1000">
+                <img src="project/pro3.JPG" class="card-img-top projImg" alt="Recipe Book"  >
                 <div class="card-body text-center">
                     <h5 class="card-title"><strong>Recipe Book</strong></h5>
                     <p class="card-text">Project with Recipe Book with mealDB API.<br>HTML, Advance CSS<br> JavaScript, XHR</p>
-                    <div>
-                        <img src="img/html.png" class="mr-3" alt="HTML5" height="30">
-                        <img src="img/css.png" class="mr-3" alt="CSS3" height="30">
-                        <img src="img/js.png" alt="JS" height="30">
-                        <img src="img/bootstrap.png" alt="Bootstrap" height="30">
-                    </div>
-                    <div class="card-body " style="position: relative;bottom:-20px;">
-                        <a href="https://github.com/soundaryamecse/masai_sprint3/blob/master/index.html" target="_blank" class="btn text-white" style="background-color: #425de6;">Code</a>
-                        <a href="https://soundaryamecse.github.io/masai_sprint3/" target="_blank" class="btn text-white" style="background-color: #425de6;">Demo</a>
-                    </div>
+                    <div class="codePosition">
+                        <div>
+                            <img src="img/html.png" class="mr-3 icon" alt="HTML5" height="30px" width="30px">
+                            <img src="img/css.png" class="mr-3 icon" alt="CSS3" height="30px" width="30px">
+                            <img src="img/js.png" class="mr-3 icon" alt="JS" height="30px" width="30px">
+                            <img src="img/bootstrap.png"  class="mr-3 icon" alt="Bootstrap" height="30px" width="30px">
+                        </div>
+                        <div class="card-body">
+                            <a href="https://github.com/soundaryamecse/masai_sprint3/blob/master/index.html" target="_blank" class="btn text-white" style="background-color: #425de6;">Code</a>
+                            <a href="https://soundaryamecse.github.io/masai_sprint3/" target="_blank" class="btn text-white" style="background-color: #425de6;">Demo</a>
+                        </div>
+                </div>
                 </div>
             </div>
             
         </div>
-        <div class="row justify-content-center">  
-            
-            <div class="card col-8 col-sm-8 col-md-5 col-lg-3 p-2 m-3 project" style="width: 25rem;" data-aos="zoom-in" data-aos-duration="1000">
-                <img src="project/pro8.JPG" class="card-img-top" alt="Flawless"  height="180px" style="padding: 10px;" >
-                <div class="card-body text-center">
-                    <h5 class="card-title"><strong>Flawless(cloned from Seamless.com)</strong></h5>
-                    <p class="card-text">Amazing Project implemented with MongoDB, express ,node js, Redux, React, materialui, React hooks</p>
-                    <div>
-                        <img src="img/React.png" class="mr-3" alt="HTML5" height="30">
-                        <img src="img/redux.png" class="mr-3" alt="CSS3" height="30">
-                        <img src="img/mongodb.png" class="mr-3" alt="JS" height="30">
-                        <img src="img/nodejs.png" alt="Bootstrap" height="30">
-                        <img src="img/materialui.png" alt="Bootstrap" height="30">
-                    </div>
-                    <div class="card-body " style="position: relative;bottom:-20px;">
-                        <a href="https://github.com/riteshranjan1997/Ivory-Apache-Projects" target="_blank" class="btn text-white" style="background-color: #425de6;">Code</a>
-                        <a href="http://ec2-13-127-156-161.ap-south-1.compute.amazonaws.com/" target="_blank" class="btn text-white" style="background-color: #425de6;">Demo</a>
-                    </div>
-                </div>
-            </div>        
-            
-            <div class="card col-8 col-sm-8 col-md-5 col-lg-3 p-2 m-3 project" style="width: 25rem;" data-aos="zoom-in" data-aos-duration="1000">
-                <img src="project/pro7.JPG" class="card-img-top" alt="expense manager"  height="180px" style="padding: 10px;object-fit: cover;">
-                <div class="card-body text-center">
-                    <h5 class="card-title"><strong>Expense Manager(Clone)</strong></h5>
-                    <p class="card-text">React App with basic functionalities of expense manager with API using axios and redux</p>
-                    <div >
-                        <img src="img/React.png" class="mr-3" alt="react" height="30">
-                        <img src="img/redux.png" class="mr-3" alt="redux" height="30">
-                        <img src="img//css.png" class="mr-3" alt="css" height="30">
-                    </div>
-                    <div class="card-body" style="position: relative;bottom:-20px;">
-                        <a href="https://github.com/Madhurendra1311/expense_manager_project" target="_blank" class="btn text-white" style="background-color: #425de6;">Code</a>
-                        <a href="https://expense-manager-ten.vercel.app" target="_blank" class="btn text-white" style="background-color: #425de6;">Demo</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="card col-8 col-sm-8 col-md-5 col-lg-3 p-2 m-3 project" style="width: 25rem;" data-aos="zoom-in" data-aos-duration="1000">
-                <img src="project/pro6.JPG" class="card-img-top" alt="Recipe Book"  height="180px" style="padding: 10px;object-fit: cover;">
-                <div class="card-body text-center">
-                    <h5 class="card-title"><strong>Leela Palace(clone)</strong></h5>
-                    <p class="card-text">Project with React<br>React router DOM<br> Context API and styled Components</p>
-                    <div>
-                        <img src="img/React.png" class="mr-3" alt="HTML5" height="30">
-                        <img src="img/css.png" class="mr-3" alt="CSS3" height="30">
-                        
-                    </div>
-                    <div class="card-body " style="position: relative;bottom:-20px;">
-                        <a href="https://github.com/soundaryamecse/leelapalace.github.io" target="_blank" class="btn text-white" style="background-color: #425de6;">Code</a>
-                        <a href="https://leelapalace-github-io.vercel.app/Bangalore" target="_blank" class="btn text-white" style="background-color: #425de6;">Demo</a>
-                    </div>                    
-                </div>
-            </div>
-        </div>   
+         
          <div class="row ">  
            
          </div>   
